@@ -108,6 +108,6 @@ SSH into the control node and follow the steps below:
 
   	
  
-- The URL to navigate to is the *public IP address:5601/app/kibana*. If the webpage loads, the ELK server is running and configured.
+- The URL to navigate to is the *public IP address of the ELK server plus :5601/app/kibana*. If the webpage loads, the ELK server is running and configured.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
