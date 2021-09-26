@@ -30,13 +30,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-|   Name   	|       Function       	| IP Address 	| Operating System 	|
-|:--------:	|:--------------------:	|:----------:	|:----------------:	|
-| Jump Box 	| Gateway/Provisioning 	|  10.0.0.4  	| Linux v18.04 LTS 	|
-|   Web-1  	|      HTTP Server     	|  10.0.0.5  	| Linux v18.04 LTS 	|
-|   Web-2  	|      HTTP Server     	|  10.0.0.6  	| Linux v18.04 LTS 	|
-|   Web-3  	|      HTTP Server     	|  10.0.0.7  	| Linux v18.04 LTS 	|
-|  ELK-SVR 	|   Data Acquisition   	|  10.2.0.4  	| Linux v18.04 LTS 	|
+|   Name   	|             Function             	| IP Address 	| Operating System 	|
+|:--------:	|:--------------------------------:	|:----------:	|:----------------:	|
+| Jump Box 	|       Gateway/Provisioning       	|  10.0.0.4  	| Linux v18.04 LTS 	|
+|   Web-1  	|            HTTP Server           	|  10.0.0.5  	| Linux v18.04 LTS 	|
+|   Web-2  	|            HTTP Server           	|  10.0.0.6  	| Linux v18.04 LTS 	|
+|   Web-3  	|            HTTP Server           	|  10.0.0.7  	| Linux v18.04 LTS 	|
+|  ELK-SVR 	| Data Acquisition <br>& Analytics 	|  10.2.0.4  	| Linux v18.04 LTS 	|
 
 ### Access Policies
 
