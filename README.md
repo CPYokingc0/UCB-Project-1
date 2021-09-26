@@ -60,14 +60,16 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automation almost eliminates configuration errors and is so much more efficient because so many machines can be configured in a much shorter time frame. Changes and deployment can be implemented faster with less labor costs.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
 
+- Download, install, start and attach to a Docker container
+- Prepare and modify configuration files such as hosts, ansible.cfg, etc.
+- Generate and install SSH keys to all VMs and Jump Box
+- Prepare and execute ELK playbook
+- Prepare and execute Filebeat & Metricbeat playbooks, verify data acquisition
+ 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
