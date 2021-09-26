@@ -101,10 +101,13 @@ SSH into the control node and follow the steps below:
 - ansible-playbook /etc/ansible/install-elk.yml
 - ansible-playbook /etc/ansible/filebeat-playbook.yml
 - ansible-playbook /etc/ansible/metricbeat-playbook.yml
+- curl http://10.2.0.4:5601 (command to verify Kibana is installed and running)
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- The playbook files used in this deployment are *install-elk.yml, filebeat-playbook.yml* and *metricbeat-playbook.yml*. These files were copied into the /etc/ansible directory of the Ansible control node.
+- The hosts file located in the /etc/ansible/ directory is updated so that it contains the private IP addresses of servers that will be monitored, under the [webservers] heading, and also the private IP address of the ELK server under the [elk] heading. The value of the hosts statement in each playbook file designates which devices will receive the actions specified in each playbook. The hosts statement is usually defined at or near the top of the playbook file and will follow what was configured in the hosts file.
+
+  	
+ 
+- The URL to navigate to is the *public IP address:5601/app/kibana*. If the webpage loads, the ELK server is running and configured.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
