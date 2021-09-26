@@ -28,7 +28,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat records system metrics like system uptime, CPU workloads, memory usage, etc.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 |   Name   	|             Function             	| IP Address 	| Operating System 	|
 |:--------:	|:--------------------------------:	|:----------:	|:----------------:	|
@@ -42,11 +41,11 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- sticky static IP address from my home ISP vendor (Comcast).
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the Jump Box.
+- All machines within the 10.0.0.0 network can communicate with the ELK server because of the peering         configuration between the two virtual subnets. 
 
 A summary of the access policies in place can be found in the table below.
 
