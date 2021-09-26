@@ -21,9 +21,9 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+Load balancing ensures that the application will be highly available, in addition to restricting inbound access to the network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file system and system metrics.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file system of hte VMs on the network, as well as watch system metrics.
 - Filebeat monitors for changes in files and generates logs on the file system.
 - Metricbeat records system metrics like system uptime, CPU workloads, memory usage, etc.
 
@@ -49,13 +49,13 @@ Machines within the network can only be accessed by the Jump Box.
 
 A summary of the access policies in place can be found in the table below.
 
-| Server Name 	|    Publicly Accessible   	|             Allowed IP Address            	|
-|:-----------:	|:------------------------:	|:-----------------------------------------:	|
-|   Jump Box  	|            Yes           	|                any, port 22               	|
-|    Web-1    	| Yes behind Load Balancer 	| 174.50.161.39 port 80<br>10.0.0.4 port 22 	|
-|    Web-2    	| Yes behind Load Balancer 	| 174.50.161.39 port 80<br>10.0.0.4 port 22 	|
-|    Web-3    	| Yes behind Load Balancer 	| 174.50.161.39 port 80<br>10.0.0.4 port 22 	|
-|   ELK-SVR   	|            Yes           	|  174.50.161.39 port 5601<br>any, port 22  	|
+| Server Name 	| Publicly Accessible 	| Allowed IP Addresses 	|
+|:-----------:	|:-------------------:	|:--------------------:	|
+|   Jump Box  	|         Yes         	|     174.50.161.39    	|
+|   ELK-SVR   	|          No         	|    10.0.0.1 to 254   	|
+|    Web-1    	|          No         	|    10.0.0.1 to 254   	|
+|    Web-2    	|          No         	|    10.0.0.1 to 254   	|
+|    Web-3    	|          No         	|    10.0.0.1 to 254   	|
 
 
 ### Elk Configuration
