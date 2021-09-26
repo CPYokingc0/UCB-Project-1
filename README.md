@@ -6,7 +6,6 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Filebeat.
 
-  - [ELK Server Playbook File](Playbooks/install-elk.yml)	
 
 This document contains the following details:
 - Description of the Topology
@@ -62,13 +61,13 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automation almost eliminates configuration errors and is so much more efficient because so many machines can be configured in a much shorter time frame. Changes and deployment can be implemented faster with less labor costs.
 
-The playbook implements the following tasks:
+The [ELK Server Playbook File](Playbooks/install-elk.yml) implements the following tasks:
 
-- Download, install, start and attach to a Docker container
-- Prepare and modify configuration files such as hosts, ansible.cfg, etc.
-- Generate and install SSH keys to all VMs and Jump Box
-- Prepare and execute ELK playbook
-- Prepare and execute Filebeat & Metricbeat playbooks, verify data acquisition
+- Specifies hosts and remote user names
+- Downloads and installs app modules such as docker, python, docker python module
+- Configures additional virtual memory
+- Configures and opens TCP ports
+
  
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
