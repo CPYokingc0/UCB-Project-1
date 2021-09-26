@@ -42,18 +42,21 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- sticky static IP address from my home ISP vendor (Comcast).
+- sticky static IP address (174.50.161.39) from my home ISP vendor (Comcast).
 
 Machines within the network can only be accessed by the Jump Box.
 - All machines within the 10.0.0.0 network can communicate with the ELK server because of the peering         configuration between the two virtual subnets. 
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Server Name 	|    Publicly Accessible   	|             Allowed IP Address            	|
+|:-----------:	|:------------------------:	|:-----------------------------------------:	|
+|   Jump Box  	|            Yes           	|                any, port 22               	|
+|    Web-1    	| Yes behind Load Balancer 	| 174.50.161.39 port 80<br>10.0.0.4 port 22 	|
+|    Web-2    	| Yes behind Load Balancer 	| 174.50.161.39 port 80<br>10.0.0.4 port 22 	|
+|    Web-3    	| Yes behind Load Balancer 	| 174.50.161.39 port 80<br>10.0.0.4 port 22 	|
+|   ELK-SVR   	|            Yes           	|  174.50.161.39 port 5601<br>any, port 22  	|
+
 
 ### Elk Configuration
 
