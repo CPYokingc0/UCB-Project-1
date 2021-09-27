@@ -41,7 +41,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- sticky static IP address (174.50.161.39) from my home ISP vendor (Comcast).
+- IP address (174.50.161.39) from my home ISP vendor (Comcast).
 
 Machines within the network can only be accessed by the Jump Box.
 - All machines within the 10.0.0.0 network can communicate with the ELK server because of the peering         configuration between the two virtual subnets. 
@@ -108,6 +108,6 @@ SSH into the control node and follow the steps below:
 
   	
  
-- The URL to navigate to is the *public IP address of the ELK server plus :5601/app/kibana*. If the webpage loads, the ELK server is running and configured. [My ELK server URL](Images/Kibana.png)
+- The URL to navigate to is the *public IP address of the ELK server plus :5601/app/kibana*. If the webpage loads, the ELK server is running and configured. [Screenshot of my ELK server URL](Images/Kibana.png)
 
 
