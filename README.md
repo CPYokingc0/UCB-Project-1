@@ -61,7 +61,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automation almost eliminates configuration errors and is so much more efficient because so many machines can be configured in a much shorter time frame. Changes and deployment can be implemented faster with less labor costs.
 
-The [ELK Server Playbook File](Ansible and Config files/install-elk.yml) implements the following tasks:
+The [ELK Server Playbook File](Ansible%20and%20Config%20files/install-elk.yml) implements the following tasks:
 
 - Specifies hosts and remote user names
 - Downloads and installs app modules such as docker, python, docker python module
