@@ -105,9 +105,9 @@ SSH into the control node and follow the steps below:
 
 - The playbook files used in this deployment are *install-elk.yml, filebeat-playbook.yml* and *metricbeat-playbook.yml*. These files were copied into the /etc/ansible directory of the Ansible control node.
 - The hosts file located in the /etc/ansible/ directory is updated so that it contains the private IP addresses of servers that will be monitored, under the [webservers] heading, and also the private IP address of the ELK server under the [elk] heading. The value of the hosts statement in each playbook file designates which devices will receive the actions specified in each playbook. The hosts statement is usually defined at or near the top of the playbook file and will follow what was configured in the hosts file.
-
-  	
+ 	
  
 - The URL to navigate to is the *public IP address of the ELK server plus :5601/app/kibana*. If the webpage loads, the ELK server is running and configured. [Screenshot of my ELK server URL](Images/Kibana.png)
+- If it becomes necessary to redeploy this ELK Stack configuration, or any part of it, I have created simple [scripts](Scripts) that can be executed faster than manually retyping the commands to run the various playbooks.
 
 
