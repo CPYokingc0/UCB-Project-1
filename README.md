@@ -51,7 +51,7 @@ A summary of the access policies in place can be found in the table below.
 | Server Name 	| Publicly Accessible 	| Allowed IP Addresses 	|
 |:-----------:	|:-------------------:	|:--------------------:	|
 |   Jump Box  	|         Yes         	|     174.50.161.39    	|
-|   ELK-SVR   	|          No         	|    10.0.0.1 to 254   	|
+|   ELK-SVR   	|         Yes         	|     174.50.161.39   	|
 |    Web-1    	|          No         	|    10.0.0.1 to 254   	|
 |    Web-2    	|          No         	|    10.0.0.1 to 254   	|
 |    Web-3    	|          No         	|    10.0.0.1 to 254   	|
